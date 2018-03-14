@@ -6,6 +6,10 @@ canvas.drawing, canvas.drawingBuffer {
     width: 50%;
 }
 
+video {
+    width: 50%;
+}
+
 #scanner-container {
     width: 100%;
 }
