@@ -5,6 +5,6 @@ canvas.drawing, canvas.drawingBuffer {
     top: 0;
 }
 
-scanner-container {
+#scanner-container {
     max-width: 50%;
 }
