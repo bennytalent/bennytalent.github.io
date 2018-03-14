@@ -96,6 +96,7 @@ function startScanner() {
 
         alertMessage();
 
+        //test
 
     });
 }
