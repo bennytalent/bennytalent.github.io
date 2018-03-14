@@ -4,3 +4,7 @@ canvas.drawing, canvas.drawingBuffer {
     left: 0;
     top: 0;
 }
+
+scanner-container {
+    max-width: 50%;
+}
