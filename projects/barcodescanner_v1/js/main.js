@@ -7,8 +7,8 @@ function startScanner() {
             type: "LiveStream",
             target: document.querySelector('#scanner-container'),
             constraints: {
-                width: 480,
-                height: 320,
+                width: 1280,
+                height: 720,
                 facingMode: "environment"
             },
         },
