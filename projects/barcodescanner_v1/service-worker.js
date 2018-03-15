@@ -1,11 +1,11 @@
 var cacheName = 'barcodescanner-1';
 
 var filesToCache = [
-    '/',
-    '/index.html',
-    '/js/main.js',
-    '/js/quagga.js',
-    '/css/style.css'
+    '/projects/barcodescanner_v1/',
+    '/projects/barcodescanner_v1/index.html',
+    '/projects/barcodescanner_v1/js/main.js',
+    '/projects/barcodescanner_v1/js/quagga.js',
+    '/projects/barcodescanner_v1/css/style.css'
 ];
 
 self.addEventListener('install', function(e) {
