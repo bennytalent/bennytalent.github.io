@@ -1,4 +1,4 @@
-var cacheName = 'barcodescanner-2';
+var cacheName = 'barcodescanner-3';
 
 var filesToCache = [
     '/projects/barcodescanner_v1/',
