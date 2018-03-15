@@ -34,7 +34,7 @@ self.addEventListener('activate', function(e) {
 });
 
 // when the browser fetches a URL...
-self.addEventListener('fetch', function (event) {
+/*self.addEventListener('fetch', function (event) {
     // ... either respond with the cached object or go ahead and fetch the actual URL
     event.respondWith(
         caches.match(event.request).then(function (response) {
@@ -46,4 +46,33 @@ self.addEventListener('fetch', function (event) {
             return fetch(event.request);
         })
     );
+});*/
+
+// when the browser fetches a URL...
+self.addEventListener('fetch', function (event) {
+
+    // abandon non-GET requests
+    if (event.request.method !== 'GET') return;
+
+    let url = event.request.url;
+
+    // ... either respond with the cached object or go ahead and fetch the actual URL
+    event.respondWith(
+
+        caches.open(chacheName).then(function (cache) {
+            return cache.match(event.request).then(function (response) {
+                if(response && !navigator.onLine) {
+                    // return cached file
+                    console.log('cache fetch: ' + url);
+                    return response;
+                }
+
+                // make network request
+                return fetch(event.request).then(function (newreq) {
+                    console.log('network fetch: ' + url);
+                    if (newreq.ok) cache.put(event.request, newreq.clone());
+                    return newreq;
+                })
+            });
+        }));
 });
