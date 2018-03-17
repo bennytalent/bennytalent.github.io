@@ -5,9 +5,7 @@ var filesToCache = [
     '/index.html',
     '/js/main.js',
     '/js/quagga.js',
-    '/css/style.css',
-    '/manifest.json',
-    'https://fonts.googleapis.com/css?family=Roboto:300,600,300italic,600italic'
+    '/css/style.css'
 ];
 
 self.addEventListener('install', function(e) {
