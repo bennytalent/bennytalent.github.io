@@ -1,4 +1,4 @@
-var cacheName = 'barcodescanner-11'; //17.03.2018 - 15:11
+var cacheName = 'barcodescanner-12'; //17.03.2018 - 15:44
 
 var filesToCache = [
     '/',
