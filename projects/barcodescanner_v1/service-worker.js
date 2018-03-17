@@ -1,11 +1,13 @@
-var cacheName = 'barcodescanner-4';
+var cacheName = 'barcodescanner-10'; //17.03.2018 - 15:00
 
 var filesToCache = [
-    '/projects/barcodescanner_v1/',
-    '/projects/barcodescanner_v1/index.html',
-    '/projects/barcodescanner_v1/js/main.js',
-    '/projects/barcodescanner_v1/js/quagga.js',
-    '/projects/barcodescanner_v1/css/style.css'
+    '/',
+    '/index.html',
+    '/js/main.js',
+    '/js/quagga.js',
+    '/css/style.css',
+    '/manifest.json',
+    'https://fonts.googleapis.com/css?family=Roboto:300,600,300italic,600italic'
 ];
 
 self.addEventListener('install', function(e) {
@@ -16,17 +18,16 @@ self.addEventListener('install', function(e) {
 
             filesToCache.forEach(function (file) {
                 cache.add(file).catch(function (reason) {
-
+                    console.log('[ServiceWorker] Caching failed for file ' + file);
                 });
             });
-            console.log('[ServiceWorker] Caching failed for file ' + file);
             //return cache.addAll(filesToCache);
         })
     );
 });
 
 // TODO check new function
-/*self.addEventListener('activate', function(e) {
+self.addEventListener('activate', function(e) {
     console.log('[ServiceWorker] Activate');
     e.waitUntil(
         caches.keys().then(function (keyList) {
@@ -39,9 +40,9 @@ self.addEventListener('install', function(e) {
         })
     );
     return self.clients.claim();
-});*/
+});
 
-self.addEventListener('activate', function (event) {
+/*self.addEventListener('activate', function (event) {
     console.log('[ServiceWorker] Activating new service worker...');
 
     var chacheWhiteList = [cacheName];
@@ -57,7 +58,7 @@ self.addEventListener('activate', function (event) {
             );
         })
     );
-});
+});*/
 
 // when the browser fetches a URL... TODO check new function
 /*
@@ -77,13 +78,13 @@ self.addEventListener('fetch', function (event) {
 
 self.addEventListener('fetch', function (event) {
     console.log('[ServiceWorker] Fetch event for ', event.request.url);
-    event.respondWIth(
+    event.respondWith(
         caches.match(event.request).then(function (response) {
             if(response) {
                 console.log('Found ', event.request.url, ' in cache');
                 return response;
             }
-            console.log('Network request for ', event.request.url);
+            console.log('[ServiceWorker] Network request for ', event.request.url);
             return fetch(event.request).then(function(response) {
 
                 // TODO 5 - Respond with custom 404 page
