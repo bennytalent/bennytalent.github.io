@@ -2,8 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65f1f8e4-f0f2-40c4-8bd3-0dff0e099ba7" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/projects/ean/css/fonts/roboto.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projects/ean/css/style.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projects/ean/favicon.ico" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projects/ean/images/ic_add_white_24px.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projects/ean/images/ic_refresh_white_24px.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projects/ean/images/icons/icon-128x128.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projects/ean/images/icons/icon-144x144.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projects/ean/images/icons/icon-152x152.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projects/ean/images/icons/icon-192x192.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projects/ean/images/icons/icon-256x256.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projects/ean/images/icons/icon-32x32.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projects/ean/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projects/ean/js/main.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projects/ean/js/quagga.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projects/ean/launcher-icon-144.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projects/ean/launcher-icon-192.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projects/ean/launcher-icon-256.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projects/ean/launcher-icon-96.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projects/ean/launcher-icon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projects/ean/manifest.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projects/ean/service-worker.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/projects/barcodescanner_v1/service-worker.js" afterPath="$PROJECT_DIR$/projects/barcodescanner_v1/service-worker.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +40,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/barcodescanner_v1/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+            <state relative-caret-position="0">
+              <caret line="15" column="53" lean-forward="false" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -37,21 +57,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="service-worker.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="service-worker.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/barcodescanner_v1/service-worker.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+              <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manifest.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="manifest.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/barcodescanner_v1/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+            <state relative-caret-position="493">
+              <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -129,8 +149,8 @@
         <option value="$PROJECT_DIR$/projects/barcodescanner_v1/js/main.js" />
         <option value="$PROJECT_DIR$/projects/barcodescanner_v1/css/style.css" />
         <option value="$PROJECT_DIR$/projects/barcodescanner_v1/index.html" />
-        <option value="$PROJECT_DIR$/projects/barcodescanner_v1/manifest.json" />
         <option value="$PROJECT_DIR$/projects/barcodescanner_v1/service-worker.js" />
+        <option value="$PROJECT_DIR$/projects/barcodescanner_v1/manifest.json" />
       </list>
     </option>
   </component>
@@ -166,8 +186,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -185,6 +205,12 @@
               <item name="bennytalent.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="projects" type="462c0819:PsiDirectoryNode" />
               <item name="barcodescanner_v1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bennytalent.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bennytalent.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="ean" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bennytalent.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -209,19 +235,19 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Benny\GitHub\bennytalent\bennytalent.github.io\projects\ean" />
+      <recent name="D:\Benny\GitHub\bennytalent\bennytalent.github.io" />
+      <recent name="D:\Benny\GitHub\bennytalent\bennytalent.github.io\projects\barcodescanner_v1" />
+      <recent name="D:\Benny\GitHub\bennytalent\bennytalent.github.io\projects\barcodescanner_v1\css" />
+      <recent name="D:\Benny\GitHub\bennytalent\bennytalent.github.io\projects\barcodescanner_v2" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Benny\GitHub\bennytalent\bennytalent.github.io\projects\example\vendor" />
       <recent name="D:\Benny\GitHub\bennytalent\bennytalent.github.io\projects\example\css" />
       <recent name="D:\Benny\GitHub\bennytalent\bennytalent.github.io\projects\example" />
       <recent name="D:\Benny\GitHub\bennytalent\bennytalent.github.io\projects\test" />
       <recent name="D:\Benny\GitHub\bennytalent\bennytalent.github.io\projects\barcodescanner_v1" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Benny\GitHub\bennytalent\bennytalent.github.io" />
-      <recent name="D:\Benny\GitHub\bennytalent\bennytalent.github.io\projects\barcodescanner_v1" />
-      <recent name="D:\Benny\GitHub\bennytalent\bennytalent.github.io\projects\barcodescanner_v1\css" />
-      <recent name="D:\Benny\GitHub\bennytalent\bennytalent.github.io\projects\barcodescanner_v2" />
-      <recent name="C:\xampp\htdocs\projects\barcodescanner\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -253,7 +279,8 @@
       <workItem from="1520886142164" duration="5238000" />
       <workItem from="1521056230858" duration="13223000" />
       <workItem from="1521125292000" duration="16645000" />
-      <workItem from="1521300231908" duration="49000" />
+      <workItem from="1521300231908" duration="207000" />
+      <workItem from="1521404301562" duration="620000" />
     </task>
     <task id="LOCAL-00001" summary="push test">
       <created>1521056821133</created>
@@ -479,26 +506,39 @@
       <option name="project" value="LOCAL" />
       <updated>1521297963784</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="fixing cache system">
+      <created>1521300289732</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1521300289732</updated>
+    </task>
+    <task id="LOCAL-00034" summary="fixing cache system">
+      <created>1521300375376</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1521300375377</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41866000" />
+    <option name="totallyTimeSpent" value="42644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947807" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947807" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -531,6 +571,54 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/projects/barcodescanner_v1/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="53" lean-forward="false" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/barcodescanner_v1/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/barcodescanner_v1/service-worker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/barcodescanner_v1/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1972">
+          <caret line="116" column="35" lean-forward="false" selection-start-line="116" selection-start-column="29" selection-end-line="116" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/barcodescanner_v1/js/quagga.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14892">
+          <caret line="876" column="22" lean-forward="false" selection-start-line="876" selection-start-column="17" selection-end-line="876" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/barcodescanner_v1/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="16" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/projects/barcodescanner_v1/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -708,11 +796,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/quagga.min.js" />
-    <entry file="file://$PROJECT_DIR$/projects/barcodescanner_v1/favicon.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/barcodescanner_v2/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -786,16 +869,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/barcodescanner_v1/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/barcodescanner_v1/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+        <state relative-caret-position="0">
+          <caret line="15" column="53" lean-forward="false" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -803,7 +878,20 @@
     <entry file="file://$PROJECT_DIR$/projects/barcodescanner_v1/service-worker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/barcodescanner_v1/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/barcodescanner_v1/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding />
         </state>
       </provider>
