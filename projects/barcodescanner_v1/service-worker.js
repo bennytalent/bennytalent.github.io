@@ -59,7 +59,6 @@ self.addEventListener('activate', function(e) {
 });*/
 
 // when the browser fetches a URL... TODO check new function
-/*
 self.addEventListener('fetch', function (event) {
     // ... either respond with the cached object or go ahead and fetch the actual URL
     event.respondWith(
@@ -72,8 +71,9 @@ self.addEventListener('fetch', function (event) {
             return fetch(event.request);
         })
     );
-});*/
+});
 
+/*
 self.addEventListener('fetch', function (event) {
     console.log('[ServiceWorker] Fetch event for ', event.request.url);
     event.respondWith(
@@ -101,4 +101,4 @@ self.addEventListener('fetch', function (event) {
 
         })
     );
-});
+});*/

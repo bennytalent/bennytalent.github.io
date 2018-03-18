@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65f1f8e4-f0f2-40c4-8bd3-0dff0e099ba7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/barcodescanner_v1/test.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/projects/barcodescanner_v1/service-worker.js" afterPath="$PROJECT_DIR$/projects/barcodescanner_v1/service-worker.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,17 +38,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="service-worker.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="service-worker.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/barcodescanner_v1/service-worker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="52" column="56" lean-forward="true" selection-start-line="52" selection-start-column="56" selection-end-line="52" selection-end-column="56" />
+            <state relative-caret-position="1040">
+              <caret line="72" column="6" lean-forward="true" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/barcodescanner_v1/test.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -139,9 +140,9 @@
         <option value="$PROJECT_DIR$/projects/barcodescanner_v1/js/main.js" />
         <option value="$PROJECT_DIR$/projects/barcodescanner_v1/css/style.css" />
         <option value="$PROJECT_DIR$/projects/barcodescanner_v1/index.html" />
-        <option value="$PROJECT_DIR$/projects/barcodescanner_v1/service-worker.js" />
         <option value="$PROJECT_DIR$/projects/barcodescanner_v1/manifest.json" />
         <option value="$PROJECT_DIR$/projects/barcodescanner_v1/test.html" />
+        <option value="$PROJECT_DIR$/projects/barcodescanner_v1/service-worker.js" />
       </list>
     </option>
   </component>
@@ -265,7 +266,7 @@
       <workItem from="1521056230858" duration="13223000" />
       <workItem from="1521125292000" duration="16645000" />
       <workItem from="1521300231908" duration="207000" />
-      <workItem from="1521404301562" duration="1171000" />
+      <workItem from="1521404301562" duration="1266000" />
     </task>
     <task id="LOCAL-00001" summary="push test">
       <created>1521056821133</created>
@@ -519,11 +520,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521405234123</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="fixing cache system">
+      <created>1521405493054</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1521405493054</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43195000" />
+    <option name="totallyTimeSpent" value="43290000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
@@ -887,18 +895,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/barcodescanner_v1/service-worker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="52" column="56" lean-forward="true" selection-start-line="52" selection-start-column="56" selection-end-line="52" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/barcodescanner_v1/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/barcodescanner_v1/service-worker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1040">
+          <caret line="72" column="6" lean-forward="true" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
           <folding />
         </state>
       </provider>
