@@ -1,11 +1,11 @@
 var cacheName = 'barcodescanner-12'; //17.03.2018 - 15:44
 
 var filesToCache = [
-    '/',
-    '/index.html',
-    '/js/main.js',
-    '/js/quagga.js',
-    '/css/style.css'
+    '/projects/ean/',
+    '/projects/ean/index.html',
+    '/projects/ean/js/main.js',
+    '/projects/ean/js/quagga.js',
+    '/projects/ean/css/style.css'
 ];
 
 self.addEventListener('install', function(e) {
