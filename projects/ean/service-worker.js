@@ -1,4 +1,4 @@
-var cacheName = 'barcodescanner-12'; //17.03.2018 - 15:44
+var cacheName = 'barcodescanner-15'; //18.03.2018 - 23:23
 
 var filesToCache = [
     '/projects/ean/',
@@ -61,6 +61,7 @@ self.addEventListener('activate', function(e) {
 // when the browser fetches a URL... TODO check new function
 self.addEventListener('fetch', function (event) {
     // ... either respond with the cached object or go ahead and fetch the actual URL
+    console.log('[ServiceWorker] Fetch event for ', event.request.url);
     event.respondWith(
         caches.match(event.request).then(function (response) {
             if(response) {
