@@ -111,6 +111,12 @@ body {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
+    float: left;
+}
+
+#btn {
+    float: left;
+    margin: 0px 0px 0px 10px;
 }
 
 .main {
