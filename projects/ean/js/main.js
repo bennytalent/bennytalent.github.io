@@ -147,20 +147,23 @@ function startScanner() {
     Quagga.onDetected(function (result) {
         console.log("Barcode detected and processed : [" + result.codeResult.code + "]", result);
 
-        function alertMessage() {
-            _lockScanning = true;
-            if (confirm("Code detected: " + result.codeResult.code + "\nCorrect?")) {
-                Quagga.stop();
-                _lockScanning = false;
-            } else {
-                startScanner();
-                _lockScanning = false;
-            }
-            //alert("Code detected: " + result.codeResult.code + "\n Correct?");
-        };
-
         if(!_lockScanning){
+
+            _lockScanning = true;
+
+            function alertMessage() {
+                if (confirm("Code detected: " + result.codeResult.code + "\nCorrect?")) {
+                    Quagga.stop();
+                    _lockScanning = false;
+                } else {
+                    startScanner();
+                    _lockScanning = false;
+                }
+                //alert("Code detected: " + result.codeResult.code + "\n Correct?");
+            };
+
             alertMessage();
+
         }
 
     });
