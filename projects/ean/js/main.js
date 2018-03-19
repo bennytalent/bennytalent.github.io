@@ -148,12 +148,13 @@ function startScanner() {
         console.log("Barcode detected and processed : [" + result.codeResult.code + "]", result);
 
         function alertMessage() {
+            _lockScanning = true;
             if (confirm("Code detected: " + result.codeResult.code + "\nCorrect?")) {
                 Quagga.stop();
-                _lockScanning = true;
+                _lockScanning = false;
             } else {
                 startScanner();
-                _lockScanning = true;
+                _lockScanning = false;
             }
             //alert("Code detected: " + result.codeResult.code + "\n Correct?");
         };
