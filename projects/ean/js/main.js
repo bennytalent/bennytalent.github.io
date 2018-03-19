@@ -1,4 +1,5 @@
 var _scannerIsRunning = false;
+var _lockScanning = false;
 
 function turnOnTorch() {
     //Test browser support
@@ -145,19 +146,21 @@ function startScanner() {
 
     Quagga.onDetected(function (result) {
         console.log("Barcode detected and processed : [" + result.codeResult.code + "]", result);
-        Quagga.stop();
 
         function alertMessage() {
             if (confirm("Code detected: " + result.codeResult.code + "\nCorrect?")) {
                 Quagga.stop();
+                _lockScanning = true;
             } else {
                 startScanner();
+                _lockScanning = true;
             }
             //alert("Code detected: " + result.codeResult.code + "\n Correct?");
         };
 
-        alertMessage();
-
+        if(!_lockScanning){
+            alertMessage();
+        }
 
     });
 }
