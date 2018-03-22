@@ -74,11 +74,23 @@ self.addEventListener('activate', function(e) {
             })
         ])
     );
+
+    /*
+   * Fixes a corner case in which the app wasn't returning the latest data.
+   * You can reproduce the corner case by commenting out the line below and
+   * then doing the following steps: 1) load app for first time so that the
+   * initial New York City data is shown 2) press the refresh button on the
+   * app 3) go offline 4) reload the app. You expect to see the newer NYC
+   * data, but you actually see the initial data. This happens because the
+   * service worker is not yet activated. The code below essentially lets
+   * you activate the service worker faster.
+   */
+    return self.clients.claim();
 });
 
 
 // when the browser fetches a URL... TODO check new function
-self.addEventListener('fetch', function (event) {
+/*self.addEventListener('fetch', function (event) {
     // ... either respond with the cached object or go ahead and fetch the actual URL
     console.log('[ServiceWorker] Fetch event for ', event.request.url);
     event.respondWith(
@@ -91,4 +103,32 @@ self.addEventListener('fetch', function (event) {
             return fetch(event.request);
         })
     );
+});*/
+
+self.addEventListener('fetch',function(e){
+    const url = new URL(e.request.url);
+    if (url.hostname === 'bennytalent.github.io' || url.hostname === 'fonts.googleapis.com'){
+        console.log('[ServiceWorker] Fetch event for ', event.request.url);
+        e.respondWith(
+            caches.match(e.request).then(function(response){
+                if (response) {
+                    return response;
+                }
+                var fetchRequest = e.request.clone();
+
+                return fetch(fetchRequest).then(function(response) {
+                    if (!response || response.status !== 200 || response.type !== 'basic') {
+                        return response;
+                    }
+                    var responseToCache = response.clone();
+                    caches.open(STATIC_CACHE_NAME).then(function(cache) {
+                        cache.put(e.request, responseToCache);
+                    });
+                    return response;
+                });
+            })
+        );
+    } else if (CACHE_APP.indexOf(url.pathname) !== -1){
+        e.respondWith(caches.match(e.request));
+    }
 });

@@ -46,14 +46,7 @@ function turnOnTorch() {
                     });
                 }
             }, false);
-
-            const btn = document.querySelector('.switch');
-        btn.addEventListener('click', function(){
-            track.applyConstraints({
-                advanced: [{torch: true}]
-            });
         });
-    });
     });
     });
 
@@ -188,4 +181,4 @@ if('serviceWorker' in navigator) {
 }
 
 //torch
-turnOnTorch();
+//turnOnTorch();
