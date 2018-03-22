@@ -1,5 +1,5 @@
 var STATIC_CACHE_NAME  = 'static-cache-v1';
-var APP_CACHE_NAME = 'barcodescanner-16'; //22.03.2018 - 13:51
+var APP_CACHE_NAME = 'barcodescanner-17'; //22.03.2018 - 14:14
 
 var CACHE_APP = [
     '/projects/ean/',
