@@ -1,6 +1,7 @@
-var cacheName = 'barcodescanner-15'; //18.03.2018 - 23:23
+var STATIC_CACHE_NAME  = 'static-cache-v1';
+var APP_CACHE_NAME = 'barcodescanner-16'; //22.03.2018 - 13:51
 
-var filesToCache = [
+var CACHE_APP = [
     '/projects/ean/',
     '/projects/ean/index.html',
     '/projects/ean/js/main.js',
@@ -8,29 +9,45 @@ var filesToCache = [
     '/projects/ean/css/style.css'
 ];
 
-self.addEventListener('install', function(e) {
+var CACHE_STATIC  = [
+    'https://fonts.googleapis.com/css?family=Roboto:300,600,300italic,600italic"'
+];
+
+// TODO check new function
+/*self.addEventListener('install', function(e) {
     console.log('[ServiceWorker] Install');
     e.waitUntil(
-        caches.open(cacheName).then(function(cache) {
+        caches.open(APP_CACHE_NAME).then(function(cache) {
             console.log('[ServiceWorker] Caching app shell');
 
-            filesToCache.forEach(function (file) {
+            CACHE_APP.forEach(function (file) {
                 cache.add(file).catch(function (reason) {
                     console.log('[ServiceWorker] Caching failed for file ' + file);
                 });
             });
-            //return cache.addAll(filesToCache);
+            //return cache.addAll(CACHE_APP);
+        })
+    );
+});*/
+
+self.addEventListener('install',function(e){
+    console.log('[ServiceWorker] Install');
+    e.waitUntil(
+        Promise.all([caches.open(STATIC_CACHE_NAME),caches.open(APP_CACHE_NAME),self.skipWaiting()]).then(function(storage){
+            var static_cache = storage[0];
+            var app_cache = storage[1];
+            return Promise.all([static_cache.addAll(CACHE_STATIC),app_cache.addAll(CACHE_APP)]);
         })
     );
 });
 
 // TODO check new function
-self.addEventListener('activate', function(e) {
+/*self.addEventListener('activate', function(e) {
     console.log('[ServiceWorker] Activate');
     e.waitUntil(
         caches.keys().then(function (keyList) {
             return Promise.all(keyList.map(function (key) {
-                if(key !== cacheName) {
+                if(key !== APP_CACHE_NAME) {
                     console.log('[ServiceWorker] Removing old cache', key);
                     return caches.delete(key);
                 }
@@ -38,25 +55,27 @@ self.addEventListener('activate', function(e) {
         })
     );
     return self.clients.claim();
+});*/
+
+self.addEventListener('activate', function(e) {
+    console.log('[ServiceWorker] Activate');
+    e.waitUntil(
+        Promise.all([
+            self.clients.claim(),
+            caches.keys().then(function(cacheNames) {
+                return Promise.all(
+                    cacheNames.map(function(cacheName) {
+                        if (cacheName !== APP_CACHE_NAME && cacheName !== STATIC_CACHE_NAME) {
+                            console.log('[ServiceWorker] Removing old cache', cacheName);
+                            return caches.delete(cacheName);
+                        }
+                    })
+                );
+            })
+        ])
+    );
 });
 
-/*self.addEventListener('activate', function (event) {
-    console.log('[ServiceWorker] Activating new service worker...');
-
-    var chacheWhiteList = [cacheName];
-
-    event.waitUntil(
-        caches.keys().then(function (cacheNames) {
-            return Promise.all(
-                cacheNames.map(function (cacheName) {
-                    if(chacheWhiteList.indexOf(cacheName) === -1) {
-                        return caches.delete(cacheName);
-                    }
-                })
-            );
-        })
-    );
-});*/
 
 // when the browser fetches a URL... TODO check new function
 self.addEventListener('fetch', function (event) {
@@ -73,33 +92,3 @@ self.addEventListener('fetch', function (event) {
         })
     );
 });
-
-/*
-self.addEventListener('fetch', function (event) {
-    console.log('[ServiceWorker] Fetch event for ', event.request.url);
-    event.respondWith(
-        caches.match(event.request).then(function (response) {
-            if(response) {
-                console.log('Found ', event.request.url, ' in cache');
-                return response;
-            }
-            console.log('[ServiceWorker] Network request for ', event.request.url);
-            return fetch(event.request).then(function(response) {
-
-                // TODO 5 - Respond with custom 404 page
-
-                return caches.open(staticCacheName).then(function(cache) {
-                    if (event.request.url.indexOf('test') < 0) {
-                        cache.put(event.request.url, response.clone());
-                    }
-                    return response;
-                });
-            });
-
-        }).catch(function (error) {
-
-            // TODO 6 - Respond with custom offline page
-
-        })
-    );
-});*/
