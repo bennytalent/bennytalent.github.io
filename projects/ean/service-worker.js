@@ -99,9 +99,11 @@ self.addEventListener('fetch', function (event) {
         caches.match(event.request).then(function (response) {
             if(response) {
                 // retrieve from cache
+                console.log('[ServiceWorker] Fetched ' + event.request.url + ' from cache.');
                 return response;
             }
             // fetch as normal
+            console.log('[ServiceWorker] Fetched ' + event.request.url + ' from network.');
             return fetch(event.request);
         })
     );
