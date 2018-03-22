@@ -2,39 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65f1f8e4-f0f2-40c4-8bd3-0dff0e099ba7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/.idea/final.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/favicon.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/images/clear.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/images/cloudy-scattered-showers.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/images/cloudy.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/images/cloudy_s_sunny.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/images/fog.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/images/ic_add_white_24px.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/images/ic_refresh_white_24px.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/images/icons/icon-128x128.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/images/icons/icon-144x144.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/images/icons/icon-152x152.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/images/icons/icon-192x192.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/images/icons/icon-256x256.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/images/icons/icon-32x32.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/images/partly-cloudy.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/images/rain.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/images/scattered-showers.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/images/sleet.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/images/snow.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/images/thunderstorm.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/images/wind.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/manifest.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/scripts/app.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/service-worker.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projects/final/styles/inline.css" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/projects/ean/js/main.js" afterPath="$PROJECT_DIR$/projects/ean/js/main.js" />
-      <change beforePath="$PROJECT_DIR$/projects/ean/manifest.json" afterPath="$PROJECT_DIR$/projects/ean/manifest.json" />
       <change beforePath="$PROJECT_DIR$/projects/ean/service-worker.js" afterPath="$PROJECT_DIR$/projects/ean/service-worker.js" />
+      <change beforePath="$PROJECT_DIR$/projects/final/.idea/final.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/images/clear.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/images/cloudy-scattered-showers.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/images/cloudy.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/images/cloudy_s_sunny.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/images/fog.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/images/ic_add_white_24px.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/images/ic_refresh_white_24px.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/images/icons/icon-128x128.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/images/icons/icon-144x144.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/images/icons/icon-152x152.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/images/icons/icon-192x192.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/images/icons/icon-256x256.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/images/icons/icon-32x32.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/images/partly-cloudy.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/images/rain.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/images/scattered-showers.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/images/sleet.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/images/snow.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/images/thunderstorm.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/images/wind.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/manifest.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/scripts/app.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/service-worker.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projects/final/styles/inline.css" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -70,21 +68,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="service-worker.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="service-worker.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/projects/ean/service-worker.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="23" column="57" lean-forward="false" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="final.iml" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/projects/final/.idea/final.iml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="731">
+                  <caret line="58" column="6" lean-forward="true" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -93,8 +81,8 @@
           <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/projects/ean/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="580">
-                  <caret line="173" column="10" lean-forward="false" selection-start-line="173" selection-start-column="10" selection-end-line="173" selection-end-column="10" />
+                <state relative-caret-position="1362">
+                  <caret line="150" column="24" lean-forward="true" selection-start-line="150" selection-start-column="24" selection-end-line="150" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -1136,8 +1124,8 @@
       <find>video</find>
       <find>respondWith</find>
       <find>barcodescanner</find>
-      <find>_scannerIsRunning</find>
       <find>waitUntil</find>
+      <find>_scannerIsRunning</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -1175,8 +1163,8 @@
         <option value="$PROJECT_DIR$/projects/ean/test.js" />
         <option value="$PROJECT_DIR$/projects/ean/index.html" />
         <option value="$PROJECT_DIR$/projects/ean/js/main.js" />
-        <option value="$PROJECT_DIR$/projects/ean/service-worker.js" />
         <option value="$PROJECT_DIR$/projects/ean/manifest.json" />
+        <option value="$PROJECT_DIR$/projects/ean/service-worker.js" />
       </list>
     </option>
   </component>
@@ -1300,14 +1288,7 @@
       <workItem from="1521056230858" duration="13223000" />
       <workItem from="1521125292000" duration="16645000" />
       <workItem from="1521300231908" duration="207000" />
-      <workItem from="1521404301562" duration="18574000" />
-    </task>
-    <task id="LOCAL-00001" summary="push test">
-      <created>1521056821133</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1521056821134</updated>
+      <workItem from="1521404301562" duration="21260000" />
     </task>
     <task id="LOCAL-00002" summary="project test">
       <created>1521058898675</created>
@@ -1645,16 +1626,23 @@
       <option name="project" value="LOCAL" />
       <updated>1521724494913</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="fixing cache system">
+      <created>1521747391250</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1521747391252</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60598000" />
+    <option name="totallyTimeSpent" value="63284000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12447917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12447917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -7921,14 +7909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/ean/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="173" column="10" lean-forward="false" selection-start-line="173" selection-start-column="10" selection-end-line="173" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/ean/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -7945,18 +7925,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/ean/service-worker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="57" lean-forward="false" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/final/.idea/final.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/ean/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1362">
+          <caret line="150" column="24" lean-forward="true" selection-start-line="150" selection-start-column="24" selection-end-line="150" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/ean/service-worker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="58" column="6" lean-forward="true" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
           <folding />
         </state>
       </provider>

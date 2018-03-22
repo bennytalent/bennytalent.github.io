@@ -1,36 +1,37 @@
 var STATIC_CACHE_NAME  = 'static-cache-v1';
-var APP_CACHE_NAME = 'barcodescanner-17'; //22.03.2018 - 14:14
+var APP_CACHE_NAME = 'barcodescanner-23'; //22.03.2018 - 21:08
 
 var CACHE_APP = [
-    '/projects/ean/',
-    '/projects/ean/index.html',
-    '/projects/ean/js/main.js',
-    '/projects/ean/js/quagga.js',
-    '/projects/ean/css/style.css'
+    '/',
+    '/index.html',
+    '/js/main.js',
+    '/js/quagga.js',
+    '/css/style.css'
 ];
 
 var CACHE_STATIC  = [
-    'https://fonts.googleapis.com/css?family=Roboto:300,600,300italic,600italic"'
+    //'https://fonts.googleapis.com/css?family=Roboto:300,600,300italic,600italic"'
 ];
 
 // TODO check new function
-/*self.addEventListener('install', function(e) {
+self.addEventListener('install', function(e) {
     console.log('[ServiceWorker] Install');
     e.waitUntil(
         caches.open(APP_CACHE_NAME).then(function(cache) {
             console.log('[ServiceWorker] Caching app shell');
 
             CACHE_APP.forEach(function (file) {
+                console.log('[ServiceWorker] Caching file ' + file);
                 cache.add(file).catch(function (reason) {
-                    console.log('[ServiceWorker] Caching failed for file ' + file);
-                });
+                    console.log('[ServiceWorker] Caching failed for file ' + file + ", " + reason);
+                })
             });
             //return cache.addAll(CACHE_APP);
         })
     );
-});*/
+});
 
-self.addEventListener('install',function(e){
+/*self.addEventListener('install',function(e){
     console.log('[ServiceWorker] Install');
     e.waitUntil(
         Promise.all([caches.open(STATIC_CACHE_NAME),caches.open(APP_CACHE_NAME),self.skipWaiting()]).then(function(storage){
@@ -39,10 +40,10 @@ self.addEventListener('install',function(e){
             return Promise.all([static_cache.addAll(CACHE_STATIC),app_cache.addAll(CACHE_APP)]);
         })
     );
-});
+});*/
 
 // TODO check new function
-/*self.addEventListener('activate', function(e) {
+self.addEventListener('activate', function(e) {
     console.log('[ServiceWorker] Activate');
     e.waitUntil(
         caches.keys().then(function (keyList) {
@@ -52,12 +53,13 @@ self.addEventListener('install',function(e){
                     return caches.delete(key);
                 }
             }));
+        }).then(function () {
+            return self.clients.claim();
         })
     );
-    return self.clients.claim();
-});*/
+});
 
-self.addEventListener('activate', function(e) {
+/*self.addEventListener('activate', function(e) {
     console.log('[ServiceWorker] Activate');
     e.waitUntil(
         Promise.all([
@@ -75,7 +77,7 @@ self.addEventListener('activate', function(e) {
         ])
     );
 
-    /*
+    /!*
    * Fixes a corner case in which the app wasn't returning the latest data.
    * You can reproduce the corner case by commenting out the line below and
    * then doing the following steps: 1) load app for first time so that the
@@ -84,13 +86,13 @@ self.addEventListener('activate', function(e) {
    * data, but you actually see the initial data. This happens because the
    * service worker is not yet activated. The code below essentially lets
    * you activate the service worker faster.
-   */
+   *!/
     return self.clients.claim();
-});
+});*/
 
 
 // when the browser fetches a URL... TODO check new function
-/*self.addEventListener('fetch', function (event) {
+self.addEventListener('fetch', function (event) {
     // ... either respond with the cached object or go ahead and fetch the actual URL
     console.log('[ServiceWorker] Fetch event for ', event.request.url);
     event.respondWith(
@@ -103,9 +105,9 @@ self.addEventListener('activate', function(e) {
             return fetch(event.request);
         })
     );
-});*/
+});
 
-self.addEventListener('fetch',function(e){
+/*self.addEventListener('fetch',function(e){
     const url = new URL(e.request.url);
     if (url.hostname === 'bennytalent.github.io' || url.hostname === 'fonts.googleapis.com'){
         console.log('[ServiceWorker] Fetch event for ', event.request.url);
@@ -131,4 +133,4 @@ self.addEventListener('fetch',function(e){
     } else if (CACHE_APP.indexOf(url.pathname) !== -1){
         e.respondWith(caches.match(e.request));
     }
-});
+});*/
