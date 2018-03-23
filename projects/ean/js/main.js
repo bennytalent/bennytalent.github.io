@@ -164,7 +164,8 @@ function startScanner() {
 
 
 // Start/stop scanner
-document.getElementById("btn").addEventListener("click", function () {
+document.getElementById("start-stop-button").addEventListener("click", function () {
+    console.log('button pressed');
     if (_scannerIsRunning) {
         Quagga.stop();
         _scannerIsRunning = false;
@@ -181,4 +182,4 @@ if('serviceWorker' in navigator) {
 }
 
 //torch
-//turnOnTorch();
+turnOnTorch();

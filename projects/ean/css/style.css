@@ -2,7 +2,6 @@
 canvas.drawing, canvas.drawingBuffer {
     position: absolute;
     left: 0;
-    top: 0;
     width: 100%;
 }
 
@@ -17,6 +16,7 @@ canvas.drawing, canvas.drawingBuffer {
 
 /* progressive website tutorial (weather)*/
 
+/*
 * {
     box-sizing: border-box;
 }
@@ -141,4 +141,102 @@ body {
 
 @media (max-width: 450px) {
 
+}*/
+/* youtube html responsive tutorial +++++++++++++++++++++++++++++++++++++*/
+/* Global */
+body{
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
 }
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header{
+    background: #000000;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+}
+
+header #title {
+    float: left;
+    margin: 0;
+}
+
+/* Settings */
+
+#settings {
+    min-height: 50px;
+}
+
+#settings #scanner-button-container {
+    float: left;
+    padding: 10px;
+}
+
+#torch-container {
+    float: left;
+    padding: 6px 10px 6px 10px;
+}
+
+#settings #torch {
+    float: left;
+    margin: 0;
+}
+
+#settings #checkbox_torch {
+    float: right;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

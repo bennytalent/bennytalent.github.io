@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="65f1f8e4-f0f2-40c4-8bd3-0dff0e099ba7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/projects/ean/css/style.css" afterPath="$PROJECT_DIR$/projects/ean/css/style.css" />
       <change beforePath="$PROJECT_DIR$/projects/ean/index.html" afterPath="$PROJECT_DIR$/projects/ean/index.html" />
+      <change beforePath="$PROJECT_DIR$/projects/ean/js/main.js" afterPath="$PROJECT_DIR$/projects/ean/js/main.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,14 +18,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.49085122">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/projects/ean/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="777">
-                  <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+                <state relative-caret-position="159">
+                  <caret line="21" column="53" lean-forward="false" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
                   <folding />
                 </state>
               </provider>
@@ -52,8 +54,8 @@
           <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/projects/ean/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1362">
-                  <caret line="150" column="24" lean-forward="true" selection-start-line="150" selection-start-column="24" selection-end-line="150" selection-end-column="24" />
+                <state relative-caret-position="2873">
+                  <caret line="169" column="22" lean-forward="true" selection-start-line="169" selection-start-column="22" selection-end-line="169" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -1063,8 +1065,8 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/projects/ean/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-51">
-                  <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+                <state relative-caret-position="160">
+                  <caret line="139" column="1" lean-forward="true" selection-start-line="139" selection-start-column="1" selection-end-line="139" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -1095,8 +1097,10 @@
       <find>video</find>
       <find>respondWith</find>
       <find>barcodescanner</find>
-      <find>_scannerIsRunning</find>
       <find>waitUntil</find>
+      <find>_scannerIsRunning</find>
+      <find>btn</find>
+      <find>start_stop_button</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -1130,12 +1134,12 @@
         <option value="$PROJECT_DIR$/projects/barcodescanner_v1/manifest.json" />
         <option value="$PROJECT_DIR$/projects/barcodescanner_v1/test.html" />
         <option value="$PROJECT_DIR$/projects/barcodescanner_v1/service-worker.js" />
-        <option value="$PROJECT_DIR$/projects/ean/css/style.css" />
         <option value="$PROJECT_DIR$/projects/ean/test.js" />
-        <option value="$PROJECT_DIR$/projects/ean/js/main.js" />
         <option value="$PROJECT_DIR$/projects/ean/manifest.json" />
         <option value="$PROJECT_DIR$/projects/ean/service-worker.js" />
+        <option value="$PROJECT_DIR$/projects/ean/css/style.css" />
         <option value="$PROJECT_DIR$/projects/ean/index.html" />
+        <option value="$PROJECT_DIR$/projects/ean/js/main.js" />
       </list>
     </option>
   </component>
@@ -1151,9 +1155,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="1273" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -1259,14 +1263,7 @@
       <workItem from="1521056230858" duration="13223000" />
       <workItem from="1521125292000" duration="16645000" />
       <workItem from="1521300231908" duration="207000" />
-      <workItem from="1521404301562" duration="24749000" />
-    </task>
-    <task id="LOCAL-00005" summary="changed image settings">
-      <created>1521065034673</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1521065034673</updated>
+      <workItem from="1521404301562" duration="33198000" />
     </task>
     <task id="LOCAL-00006" summary="changed image settings">
       <created>1521065125206</created>
@@ -1604,16 +1601,23 @@
       <option name="project" value="LOCAL" />
       <updated>1521756735907</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="fixing cache system">
+      <created>1521756875669</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1521756875669</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66773000" />
+    <option name="totallyTimeSpent" value="75222000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="0" width="1273" height="1047" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12447917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19172633" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1653,7 +1657,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="fixing cache system" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -7872,10 +7878,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/ean/css/style.css">
+    <entry file="file://$PROJECT_DIR$/projects/final/.idea/final.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -7888,22 +7894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/final/.idea/final.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/ean/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1362">
-          <caret line="150" column="24" lean-forward="true" selection-start-line="150" selection-start-column="24" selection-end-line="150" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/ean/service-worker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -7912,10 +7902,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/projects/ean/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2873">
+          <caret line="169" column="22" lean-forward="true" selection-start-line="169" selection-start-column="22" selection-end-line="169" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/ean/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="139" column="1" lean-forward="true" selection-start-line="139" selection-start-column="1" selection-end-line="139" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/projects/ean/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state relative-caret-position="159">
+          <caret line="21" column="53" lean-forward="false" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
           <folding />
         </state>
       </provider>
