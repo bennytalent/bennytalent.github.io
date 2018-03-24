@@ -163,6 +163,11 @@ header{
     color: #ffffff;
     padding-top: 30px;
     min-height: 70px;
+    width: 100%;
+    position: fixed;
+    /*
+    z-index: 1000;
+    */
 }
 
 header #title {
@@ -174,6 +179,7 @@ header #title {
 
 #settings {
     min-height: 50px;
+    padding-top: 100px;
 }
 
 #settings #scanner-button-container {

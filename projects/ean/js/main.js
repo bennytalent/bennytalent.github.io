@@ -182,4 +182,4 @@ if('serviceWorker' in navigator) {
 }
 
 //torch
-turnOnTorch();
+//turnOnTorch();
