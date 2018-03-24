@@ -2,17 +2,17 @@
 canvas.drawing, canvas.drawingBuffer {
     position: absolute;
     left: 0;
-    width: 100%;
+    width: 100vh;
     height: 100vh;
 }
 
 #scanner-container > video {
-    width: 100%;
+    width: 100vh;
     height: 100vh;
 }
 
 #scanner-container {
-    width: 100%;
+    width: 100vh;
     height: 100vh;
 }
 
