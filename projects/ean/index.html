@@ -26,11 +26,43 @@
 
         <header>
             <div class="container">
+
                 <h1 id="title">Barcodescanner</h1>
+
+                <div class="dropdown dropdownopen">
+
+                    <img id="menu" class="dropbtn dropdownopen" src="images/menu_icon.png">
+
+                    <div id="dropdown-menu" class="dropdown-content dropdownopen">
+
+                        <div class="dropdown-item dropdownopen" >
+
+                            <span class="dropdown-label dropdownopen">Scanner </span>
+
+                            <label class="switch dropdownopen">
+                                <input id="switch-scanner" class="dropdownopen" type="checkbox">
+                                <span class="slider round dropdownopen"></span>
+                            </label>
+
+                        </div>
+
+                        <div class="dropdown-item dropdownopen" >
+
+                            <span class="dropdown-label dropdownopen">Lampe </span>
+
+                            <label class="switch dropdownopen">
+                                <input id="switch-torch" class="dropdownopen" type="checkbox">
+                                <span class="slider round dropdownopen"></span>
+                            </label>
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </header>
 
-        <section id="settings">
+        <!--<section id="settings">
             <div class="container">
                 <div id="scanner-button-container">
                     <input id="start-stop-button"  type="button" value="Start/Stop"/>
@@ -42,7 +74,7 @@
                 </div>
 
             </div>
-        </section>
+        </section>-->
 
         <div id="scanner-container">
         </div>
@@ -53,8 +85,5 @@
 
 
     </body>
-
-    <p>Test</p>
-
 
 </html>

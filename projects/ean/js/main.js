@@ -34,7 +34,7 @@ function turnOnTorch() {
             //todo: check if camera has a torch
 
             //let there be light!
-            const checkbox = document.getElementById("checkbox_torch");
+            const checkbox = document.getElementById("switch-torch");
             checkbox.addEventListener("click", function () {
                 if (checkbox.checked) {
                     track.applyConstraints({
@@ -164,7 +164,7 @@ function startScanner() {
 
 
 // Start/stop scanner
-document.getElementById("start-stop-button").addEventListener("click", function () {
+/*document.getElementById("start-stop-button").addEventListener("click", function () {
     console.log('button pressed');
     if (_scannerIsRunning) {
         Quagga.stop();
@@ -172,7 +172,53 @@ document.getElementById("start-stop-button").addEventListener("click", function 
     } else {
         startScanner();
     }
+}, false);*/
+
+const switchScanner = document.getElementById("switch-scanner");
+switchScanner.addEventListener("click", function () {
+    if (switchScanner.checked) {
+        startScanner();
+    } else {
+        Quagga.stop();
+        _scannerIsRunning = false;
+    }
 }, false);
+
+//torch
+turnOnTorch();
+
+// dropdown menu
+document.getElementById("menu").addEventListener("click", function () {
+    showMenu();
+}, false);
+
+function showMenu() {
+    document.getElementById("dropdown-menu").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+
+    if (!event.target.matches('.dropdownopen')
+        /*&& !event.target.matches('.dropdown-content')
+        && !event.target.matches('.dropdown-item')
+        && !event.target.matches('.dropdown-label')
+        && !event.target.matches('.switch')*/) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+
+    else {
+
+    }
+};
 
 // TODO add service worker code here
 if('serviceWorker' in navigator) {
@@ -180,6 +226,3 @@ if('serviceWorker' in navigator) {
         .register('./service-worker.js')
         .then(function () { console.log('Service Worker Registered'); });
 }
-
-//torch
-//turnOnTorch();
