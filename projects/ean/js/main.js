@@ -23,8 +23,10 @@ function turnOnTorch() {
                 height: {ideal: 1080},
                 width: {ideal: 1920}
             }
-        })
-            .then((stream) => {
+        }).then((stream) => {
+            const video = document.getElementById('quagga-video');
+            video.srcObject = stream;
+
             const track = stream.getVideoTracks()[0];
 
         //Create image capture object and get camera capabilities
@@ -58,7 +60,7 @@ function turnOnTorch() {
             }
         });*/
 
-        stream.addEventListener('loadedmetadata', (e) => {
+        video.addEventListener('loadedmetadata', (e) => {
             window.setTimeout(() => (
                 onCapabilitiesReady(track.getCapabilities())
             ), 500);
