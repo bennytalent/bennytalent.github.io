@@ -18,10 +18,7 @@ function turnOnTorch() {
         // Create stream and get video track
         navigator.mediaDevices.getUserMedia({
             video: {
-                deviceId: camera.deviceId,
                 facingMode: 'environment',
-                height: {ideal: 1080},
-                width: {ideal: 1920}
             }
         }).then((stream) => {
 
