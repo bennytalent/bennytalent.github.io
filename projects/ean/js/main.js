@@ -19,7 +19,7 @@ function turnOnTorch() {
         navigator.mediaDevices.getUserMedia({
             video: {
                 deviceId: camera.deviceId,
-                facingMode: ['user', 'environment'],
+                facingMode: ['environment'],
                 height: {ideal: 1080},
                 width: {ideal: 1920}
             }
@@ -28,7 +28,7 @@ function turnOnTorch() {
 
         //Create image capture object and get camera capabilities
         const imageCapture = new ImageCapture(track);
-        const photoCapabilities = imageCapture.getPhotoCapabilities().then(() => {
+        const photoCapabilities = track.getCapabilities().then(() => {
 
             //todo: check if camera has a torch
             if(photoCapabilities.torch){
@@ -48,12 +48,12 @@ function turnOnTorch() {
                     }
                 }, false);
 
-                console.log("has camera");
+                console.log("has torch");
             }
 
             else {
                 track.stop();
-                console.log("has no camera");
+                console.log("has no torch");
             }
         });
     });
