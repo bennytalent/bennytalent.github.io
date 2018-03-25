@@ -306,6 +306,7 @@ switchScanner.addEventListener("click", function () {
 }, false);
 
 //torch
+startScanner();
 loadTorch();
 
 // dropdown menu
