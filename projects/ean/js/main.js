@@ -56,6 +56,7 @@ function turnOnTorch() {
         });*/
 
         stream.addEventListener('loadedmetadata', (e) => {
+            console.log("meta ready");
             window.setTimeout(() => (
                 onCapabilitiesReady(track.getCapabilities())
             ), 500);
