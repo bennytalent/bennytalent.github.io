@@ -1,4 +1,3 @@
-var _scannerIsRunning = false;
 var _lockScanning = false;
 
 function turnOnTorch() {
@@ -28,24 +27,30 @@ function turnOnTorch() {
             const track = stream.getVideoTracks()[0];
 
         //Create image capture object and get camera capabilities
-        const imageCapture = new ImageCapture(track)
+        const imageCapture = new ImageCapture(track);
         const photoCapabilities = imageCapture.getPhotoCapabilities().then(() => {
 
-            //todo: check if camera has a torch
+            if(photoCapabilities.torch){
+                //todo: check if camera has a torch
 
-            //let there be light!
-            const checkbox = document.getElementById("switch-torch");
-            checkbox.addEventListener("click", function () {
-                if (checkbox.checked) {
-                    track.applyConstraints({
-                        advanced: [{torch: true}]
-                    });
-                } else {
-                    track.applyConstraints({
-                        advanced: [{torch: false}]
-                    });
-                }
-            }, false);
+                //let there be light!
+                const checkbox = document.getElementById("switch-torch");
+                checkbox.addEventListener("click", function () {
+                    if (checkbox.checked) {
+                        track.applyConstraints({
+                            advanced: [{torch: true}]
+                        });
+                    } else {
+                        track.applyConstraints({
+                            advanced: [{torch: false}]
+                        });
+                    }
+                }, false);
+            }
+
+            else {
+                track.stop();
+            }
         });
     });
     });
@@ -110,7 +115,7 @@ function startScanner() {
         Quagga.start();
 
         // Set flag to is running
-        _scannerIsRunning = true;
+        //_scannerIsRunning = true;
     });
 
     Quagga.onProcessed(function (result) {
@@ -134,42 +139,6 @@ function startScanner() {
             if (result.codeResult && result.codeResult.code) {
                 Quagga.ImageDebug.drawPath(result.line, { x: 'x', y: 'y' }, drawingCtx, { color: 'red', lineWidth: 3 });
 
-                setTimeout(function () {
-                    console.log("Barcode detected and processed : [" + result.codeResult.code + "]", result);
-
-                    /* if(!_lockScanning){*/
-                    Quagga.pause();
-
-                    function alertMessage() {
-
-                        if(!_lockScanning){
-
-                            _lockScanning = true;
-
-                            if (confirm("Code detected: " + result.codeResult.code + "\nCorrect?")) {
-                                //Quagga.stop();
-                                drawingCtx.clearRect(0, 0, drawingCanvas.width, drawingCanvas.height);
-                                setTimeout(function () {
-                                    Quagga.start();
-                                    _lockScanning = false;
-                                }, 3000);
-                            } else {
-                                //startScanner();
-                                setTimeout(function () {
-                                    Quagga.start();
-                                    _lockScanning = false;
-                                }, 3000);
-
-                            }
-                            //alert("Code detected: " + result.codeResult.code + "\n Correct?");
-                        }
-                    };
-
-                    alertMessage();
-
-                    //}
-                }, 500);
-
             }
 
         }
@@ -178,7 +147,50 @@ function startScanner() {
 
     Quagga.onDetected(function (result) {
 
+        var quaggaVideo = document.getElementById("quagga-video");
+        quaggaVideo.pause();
 
+        var drawingCtx = Quagga.canvas.ctx.overlay,
+            drawingCanvas = Quagga.canvas.dom.overlay;
+
+        setTimeout(function () {
+            console.log("Barcode detected and processed : [" + result.codeResult.code + "]", result);
+
+            /* if(!_lockScanning){*/
+            Quagga.pause();
+
+            function alertMessage() {
+
+                if(!_lockScanning){
+
+                    _lockScanning = true;
+
+                    if (confirm("Code detected: " + result.codeResult.code + "\nCorrect?")) {
+                        //Quagga.stop();
+                        drawingCtx.clearRect(0, 0, drawingCanvas.width, drawingCanvas.height);
+                        quaggaVideo.play();
+                        setTimeout(function () {
+                            Quagga.start();
+                            _lockScanning = false;
+                        }, 3000);
+                    } else {
+                        //startScanner();
+                        drawingCtx.clearRect(0, 0, drawingCanvas.width, drawingCanvas.height);
+                        quaggaVideo.play();
+                        setTimeout(function () {
+                            Quagga.start();
+                            _lockScanning = false;
+                        }, 3000);
+
+                    }
+                    //alert("Code detected: " + result.codeResult.code + "\n Correct?");
+                }
+            };
+
+            alertMessage();
+
+            //}
+        }, 500);
     });
 }
 
@@ -200,12 +212,12 @@ switchScanner.addEventListener("click", function () {
         startScanner();
     } else {
         Quagga.stop();
-        _scannerIsRunning = false;
+        //_scannerIsRunning = false;
     }
 }, false);
 
 //torch
-//turnOnTorch();
+turnOnTorch();
 
 // dropdown menu
 document.getElementById("menu").addEventListener("click", function () {
@@ -233,10 +245,6 @@ window.onclick = function(event) {
                 openDropdown.classList.remove('show');
             }
         }
-    }
-
-    else {
-
     }
 };
 

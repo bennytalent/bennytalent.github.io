@@ -882,7 +882,8 @@
                     return t(e)
                 })
             }
-            R.setAttribute("preload", "auto"), R.setInputStream($.inputStream), R.addEventListener("canrecord", u.bind(void 0, t))
+            /* BK - 25.03.2018 - Added id to video container */
+           R.setAttribute("id", "quagga-video"), R.setAttribute("preload", "auto"), R.setInputStream($.inputStream), R.addEventListener("canrecord", u.bind(void 0, t))
         }
 
         function a() {

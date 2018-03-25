@@ -4,6 +4,7 @@
     <list default="true" id="65f1f8e4-f0f2-40c4-8bd3-0dff0e099ba7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/projects/ean/js/main.js" afterPath="$PROJECT_DIR$/projects/ean/js/main.js" />
+      <change beforePath="$PROJECT_DIR$/projects/ean/js/quagga.js" afterPath="$PROJECT_DIR$/projects/ean/js/quagga.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -52,8 +53,8 @@
           <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/projects/ean/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="157" column="56" lean-forward="true" selection-start-line="157" selection-start-column="56" selection-end-line="157" selection-end-column="56" />
+                <state relative-caret-position="816">
+                  <caret line="51" column="29" lean-forward="false" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
                   <folding />
                 </state>
               </provider>
@@ -62,8 +63,8 @@
           <file leaf-file-name="quagga.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/projects/ean/js/quagga.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="1" column="177" lean-forward="false" selection-start-line="1" selection-start-column="177" selection-end-line="1" selection-end-column="177" />
+                <state relative-caret-position="264">
+                  <caret line="885" column="45" lean-forward="false" selection-start-line="885" selection-start-column="33" selection-end-line="885" selection-end-column="45" />
                   <folding />
                 </state>
               </provider>
@@ -76,8 +77,8 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/projects/ean/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+                <state relative-caret-position="680">
+                  <caret line="40" column="6" lean-forward="false" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -114,8 +115,9 @@
       <find>position</find>
       <find>quagga</find>
       <find>Quagga.start</find>
-      <find>_scannerIsRunning</find>
       <find>setTimeout</find>
+      <find>_scannerIsRunning</find>
+      <find>preload</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -154,6 +156,7 @@
         <option value="$PROJECT_DIR$/projects/ean/manifest.json" />
         <option value="$PROJECT_DIR$/projects/ean/index.html" />
         <option value="$PROJECT_DIR$/projects/ean/css/style.css" />
+        <option value="$PROJECT_DIR$/projects/ean/js/quagga.js" />
         <option value="$PROJECT_DIR$/projects/ean/js/main.js" />
       </list>
     </option>
@@ -293,14 +296,7 @@
       <workItem from="1521125292000" duration="16645000" />
       <workItem from="1521300231908" duration="207000" />
       <workItem from="1521404301562" duration="34098000" />
-      <workItem from="1521902482135" duration="25774000" />
-    </task>
-    <task id="LOCAL-00013" summary="changed image settings">
-      <created>1521071303410</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1521071303410</updated>
+      <workItem from="1521902482135" duration="28795000" />
     </task>
     <task id="LOCAL-00014" summary="changed image settings">
       <created>1521071458683</created>
@@ -638,11 +634,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521930101005</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="barcodereader optimization">
+      <created>1521940192667</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1521940192667</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101896000" />
+    <option name="totallyTimeSpent" value="104917000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -651,6 +654,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284055" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -663,7 +667,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284055" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -685,7 +688,8 @@
     <MESSAGE value="added torch" />
     <MESSAGE value="fixing cache system" />
     <MESSAGE value="changed css" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed css" />
+    <MESSAGE value="barcodereader optimization" />
+    <option name="LAST_COMMIT_MESSAGE" value="barcodereader optimization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -974,22 +978,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/ean/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/ean/js/quagga.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="177" lean-forward="false" selection-start-line="1" selection-start-column="177" selection-end-line="1" selection-end-column="177" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/ean/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1006,10 +994,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/projects/ean/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="6" lean-forward="false" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/ean/js/quagga.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="885" column="45" lean-forward="false" selection-start-line="885" selection-start-column="33" selection-end-line="885" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/projects/ean/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="157" column="56" lean-forward="true" selection-start-line="157" selection-start-column="56" selection-end-line="157" selection-end-column="56" />
+        <state relative-caret-position="816">
+          <caret line="51" column="29" lean-forward="false" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
           <folding />
         </state>
       </provider>
