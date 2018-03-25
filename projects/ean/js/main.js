@@ -68,22 +68,24 @@ function turnOnTorch() {
         }
         const camera = cameras[cameras.length - 1];
 
-        // Create stream and get video track
-        navigator.mediaDevices.getUserMedia({
-            video: {
-                facingMode: 'environment',
-            }
-        }).then((stream) => {
+            // Create stream and get video track
+            navigator.mediaDevices.getUserMedia({
+                video: {
+                    deviceId: camera.deviceId,
+                    facingMode: ['user', 'environment'],
+                    height: {ideal: 1080},
+                    width: {ideal: 1920}
+                }
+            }).then((stream) => {
 
             const track = stream.getVideoTracks()[0];
 
         //Create image capture object and get camera capabilities
-        /*const imageCapture = new ImageCapture(track);
+        const imageCapture = new ImageCapture(track);
         const photoCapabilities = track.getCapabilities().then(() => {
 
             //todo: check if camera has a torch
-            if(photoCapabilities.torch){
-
+            //if(photoCapabilities.torch){
 
                 //let there be light!
                 const checkbox = document.getElementById("switch-torch");
@@ -100,47 +102,14 @@ function turnOnTorch() {
                 }, false);
 
                 console.log("has torch");
-            }
+            /*}
 
             else {
                 track.stop();
                 console.log("has no torch");
-            }
-        });*/
-            onCapabilitiesReady(track.getCapabilities());
-        stream.addEventListener('loadedmetadata', (e) => {
-            console.log("meta ready");
-            window.setTimeout(() => (
-                onCapabilitiesReady(track.getCapabilities())
-            ), 500);
+            }*/
         });
 
-        function onCapabilitiesReady(capabilities) {
-            //todo: check if camera has a torch
-            if(capabilities.torch){
-
-                //let there be light!
-                const checkbox = document.getElementById("switch-torch");
-                checkbox.addEventListener("click", function () {
-                    if (checkbox.checked) {
-                        track.applyConstraints({
-                            advanced: [{torch: true}]
-                        });
-                    } else {
-                        track.applyConstraints({
-                            advanced: [{torch: false}]
-                        });
-                    }
-                }, false);
-
-                console.log("has torch");
-            }
-
-            else {
-                track.stop();
-                console.log("has no torch");
-            }
-        }
     });
     });
 
