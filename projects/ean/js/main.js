@@ -39,83 +39,15 @@ function loadTorch(){
                                 });
                             }
                         }, false);
-
-                        console.log("has torch");
                     }
                     else {
                         track.stop();
-                        console.log('no torch');
+                        document.getElementById("dropdownitem-torch").style.display = "none";
                     }
                 }
 
             })
             .catch(err => console.error('getUserMedia() failed: ', err));
-    }
-}
-
-function turnOnTorch() {
-    //Test browser support
-    const SUPPORTS_MEDIA_DEVICES = 'mediaDevices' in navigator;
-
-    if (SUPPORTS_MEDIA_DEVICES) {
-        //Get the environment camera (usually the second one)
-        navigator.mediaDevices.enumerateDevices().then(devices => {
-
-            const cameras = devices.filter((device) => device.kind === 'videoinput');
-
-        if (cameras.length === 0) {
-            throw 'No camera found on this device.';
-        }
-        const camera = cameras[cameras.length - 1];
-
-            // Create stream and get video track
-            navigator.mediaDevices.getUserMedia({
-                video: {
-                    deviceId: camera.deviceId,
-                    facingMode: ['user', 'environment'],
-                    height: {ideal: 1080},
-                    width: {ideal: 1920}
-                }
-            }).then((stream) => {
-
-            const track = stream.getVideoTracks()[0];
-
-        //Create image capture object and get camera capabilities
-        const imageCapture = new ImageCapture(track);
-        const photoCapabilities = track.getCapabilities().then(() => {
-
-            //todo: check if camera has a torch
-            //if(photoCapabilities.torch){
-
-                //let there be light!
-                const checkbox = document.getElementById("switch-torch");
-                checkbox.addEventListener("click", function () {
-                    if (checkbox.checked) {
-                        track.applyConstraints({
-                            advanced: [{torch: true}]
-                        });
-                    } else {
-                        track.applyConstraints({
-                            advanced: [{torch: false}]
-                        });
-                    }
-                }, false);
-
-                console.log("has torch");
-            /*}
-
-            else {
-                track.stop();
-                console.log("has no torch");
-            }*/
-        });
-
-    });
-    });
-
-        //The light will be on as long the track exists
-
-
     }
 }
 
@@ -215,7 +147,6 @@ function startScanner() {
         setTimeout(function () {
             console.log("Barcode detected and processed : [" + result.codeResult.code + "]", result);
 
-            /* if(!_lockScanning){*/
             Quagga.pause();
 
             function alertMessage() {
@@ -224,7 +155,7 @@ function startScanner() {
 
                     _lockScanning = true;
 
-                    if (confirm("Code detected: " + result.codeResult.code + "\nCorrect?")) {
+                    if (confirm("Code gefunden: " + result.codeResult.code + "\nStimmt er mit dem Artikel überein?")) {
                         //Quagga.stop();
                         drawingCtx.clearRect(0, 0, drawingCanvas.width, drawingCanvas.height);
                         quaggaVideo.play();
@@ -248,22 +179,9 @@ function startScanner() {
 
             alertMessage();
 
-            //}
         }, 500);
     });
 }
-
-
-// Start/stop scanner
-/*document.getElementById("start-stop-button").addEventListener("click", function () {
-    console.log('button pressed');
-    if (_scannerIsRunning) {
-        Quagga.stop();
-        _scannerIsRunning = false;
-    } else {
-        startScanner();
-    }
-}, false);*/
 
 const switchScanner = document.getElementById("switch-scanner");
 switchScanner.addEventListener("click", function () {
