@@ -275,7 +275,7 @@ switchScanner.addEventListener("click", function () {
 }, false);
 
 //torch
-startScanner();
+//startScanner();
 loadTorch();
 
 // dropdown menu
