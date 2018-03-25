@@ -1,5 +1,58 @@
 var _lockScanning = false;
 
+function loadTorch(){
+
+    //Test browser support
+    const SUPPORTS_MEDIA_DEVICES = 'mediaDevices' in navigator;
+
+    if (SUPPORTS_MEDIA_DEVICES) {
+        navigator.mediaDevices.getUserMedia({
+            video: {
+                facingMode: 'environment',
+            }
+        })
+            .then((stream) => {
+                const video = document.querySelector('video');
+                video.srcObject = stream;
+
+                // get the active track of the stream
+                const track = stream.getVideoTracks()[0];
+
+                video.addEventListener('loadedmetadata', (e) => {
+                    window.setTimeout(() => (
+                        onCapabilitiesReady(track.getCapabilities())
+                    ), 500);
+                });
+
+                function onCapabilitiesReady(capabilities) {
+                    if (capabilities.torch) {
+                        //let there be light!
+                        const checkbox = document.getElementById("switch-torch");
+                        checkbox.addEventListener("click", function () {
+                            if (checkbox.checked) {
+                                track.applyConstraints({
+                                    advanced: [{torch: true}]
+                                });
+                            } else {
+                                track.applyConstraints({
+                                    advanced: [{torch: false}]
+                                });
+                            }
+                        }, false);
+
+                        console.log("has torch");
+                    }
+                    else {
+                        track.stop();
+                        console.log('no torch');
+                    }
+                }
+
+            })
+            .catch(err => console.error('getUserMedia() failed: ', err));
+    }
+}
+
 function turnOnTorch() {
     //Test browser support
     const SUPPORTS_MEDIA_DEVICES = 'mediaDevices' in navigator;
@@ -253,7 +306,7 @@ switchScanner.addEventListener("click", function () {
 }, false);
 
 //torch
-turnOnTorch();
+loadTorch();
 
 // dropdown menu
 document.getElementById("menu").addEventListener("click", function () {
