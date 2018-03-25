@@ -19,15 +19,16 @@ function turnOnTorch() {
         navigator.mediaDevices.getUserMedia({
             video: {
                 deviceId: camera.deviceId,
-                facingMode: ['environment'],
+                facingMode: 'environment',
                 height: {ideal: 1080},
                 width: {ideal: 1920}
             }
-        }).then(stream => {
+        })
+            .then((stream) => {
             const track = stream.getVideoTracks()[0];
 
         //Create image capture object and get camera capabilities
-        const imageCapture = new ImageCapture(track);
+        /*const imageCapture = new ImageCapture(track);
         const photoCapabilities = track.getCapabilities().then(() => {
 
             //todo: check if camera has a torch
@@ -55,7 +56,40 @@ function turnOnTorch() {
                 track.stop();
                 console.log("has no torch");
             }
+        });*/
+
+        stream.addEventListener('loadedmetadata', (e) => {
+            window.setTimeout(() => (
+                onCapabilitiesReady(track.getCapabilities())
+            ), 500);
         });
+
+        function onCapabilitiesReady(capabilities) {
+            //todo: check if camera has a torch
+            if(capabilities.torch){
+
+                //let there be light!
+                const checkbox = document.getElementById("switch-torch");
+                checkbox.addEventListener("click", function () {
+                    if (checkbox.checked) {
+                        track.applyConstraints({
+                            advanced: [{torch: true}]
+                        });
+                    } else {
+                        track.applyConstraints({
+                            advanced: [{torch: false}]
+                        });
+                    }
+                }, false);
+
+                console.log("has torch");
+            }
+
+            else {
+                track.stop();
+                console.log("has no torch");
+            }
+        }
     });
     });
 

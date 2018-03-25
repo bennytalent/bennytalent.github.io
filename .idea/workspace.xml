@@ -52,8 +52,8 @@
           <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/projects/ean/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+                <state relative-caret-position="-379">
+                  <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -295,14 +295,7 @@
       <workItem from="1521125292000" duration="16645000" />
       <workItem from="1521300231908" duration="207000" />
       <workItem from="1521404301562" duration="34098000" />
-      <workItem from="1521902482135" duration="29497000" />
-    </task>
-    <task id="LOCAL-00016" summary="responsive design">
-      <created>1521131452858</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1521131452858</updated>
+      <workItem from="1521902482135" duration="30065000" />
     </task>
     <task id="LOCAL-00017" summary="changed image settings">
       <created>1521132528572</created>
@@ -640,11 +633,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522003544051</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="barcodereader optimization">
+      <created>1522003843915</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1522003843915</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105619000" />
+    <option name="totallyTimeSpent" value="106187000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1011,8 +1011,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/ean/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="-379">
+          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
           <folding />
         </state>
       </provider>
