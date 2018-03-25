@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="65f1f8e4-f0f2-40c4-8bd3-0dff0e099ba7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/projects/ean/js/main.js" afterPath="$PROJECT_DIR$/projects/ean/js/main.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,8 +41,8 @@
           <file leaf-file-name="service-worker.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/projects/ean/service-worker.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+                <state relative-caret-position="119">
+                  <caret line="22" column="47" lean-forward="true" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
                   <folding />
                 </state>
               </provider>
@@ -52,18 +51,8 @@
           <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/projects/ean/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="quagga.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/projects/ean/js/quagga.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="264">
-                  <caret line="885" column="45" lean-forward="false" selection-start-line="885" selection-start-column="33" selection-end-line="885" selection-end-column="45" />
+                <state relative-caret-position="255">
+                  <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
@@ -117,6 +106,7 @@
       <find>setTimeout</find>
       <find>_scannerIsRunning</find>
       <find>preload</find>
+      <find>getusermedia</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -295,14 +285,7 @@
       <workItem from="1521125292000" duration="16645000" />
       <workItem from="1521300231908" duration="207000" />
       <workItem from="1521404301562" duration="34098000" />
-      <workItem from="1521902482135" duration="30537000" />
-    </task>
-    <task id="LOCAL-00019" summary="changed image settings">
-      <created>1521133634191</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1521133634191</updated>
+      <workItem from="1521902482135" duration="31208000" />
     </task>
     <task id="LOCAL-00020" summary="changed image settings">
       <created>1521134682805</created>
@@ -640,11 +623,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522004682354</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="barcodereader optimization">
+      <created>1522004882583</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1522004882584</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106659000" />
+    <option name="totallyTimeSpent" value="107330000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -969,14 +959,6 @@
     <entry file="file://$PROJECT_DIR$/projects/ean/test.html" />
     <entry file="file://$PROJECT_DIR$/projects/ean/test.js" />
     <entry file="file://$PROJECT_DIR$/projects/final/.idea/final.iml" />
-    <entry file="file://$PROJECT_DIR$/projects/ean/service-worker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/ean/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1003,16 +985,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/ean/js/quagga.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="885" column="45" lean-forward="false" selection-start-line="885" selection-start-column="33" selection-end-line="885" selection-end-column="45" />
+        <state relative-caret-position="298">
+          <caret line="1234" column="89" lean-forward="false" selection-start-line="1234" selection-start-column="89" selection-end-line="1234" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/ean/service-worker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="22" column="47" lean-forward="true" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/ean/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="23" />
           <folding />
         </state>
       </provider>
