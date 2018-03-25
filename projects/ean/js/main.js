@@ -54,7 +54,7 @@ function turnOnTorch() {
                 console.log("has no torch");
             }
         });*/
-
+            onCapabilitiesReady(track.getCapabilities());
         stream.addEventListener('loadedmetadata', (e) => {
             console.log("meta ready");
             window.setTimeout(() => (
