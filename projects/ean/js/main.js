@@ -24,8 +24,6 @@ function turnOnTorch() {
                 width: {ideal: 1920}
             }
         }).then((stream) => {
-            const video = document.getElementById('quagga-video');
-            video.srcObject = stream;
 
             const track = stream.getVideoTracks()[0];
 
@@ -60,7 +58,7 @@ function turnOnTorch() {
             }
         });*/
 
-        video.addEventListener('loadedmetadata', (e) => {
+        stream.addEventListener('loadedmetadata', (e) => {
             window.setTimeout(() => (
                 onCapabilitiesReady(track.getCapabilities())
             ), 500);
