@@ -30,8 +30,9 @@ function turnOnTorch() {
         const imageCapture = new ImageCapture(track);
         const photoCapabilities = imageCapture.getPhotoCapabilities().then(() => {
 
+            //todo: check if camera has a torch
             if(photoCapabilities.torch){
-                //todo: check if camera has a torch
+
 
                 //let there be light!
                 const checkbox = document.getElementById("switch-torch");
@@ -46,10 +47,13 @@ function turnOnTorch() {
                         });
                     }
                 }, false);
+
+                console.log("has camera");
             }
 
             else {
                 track.stop();
+                console.log("has no camera");
             }
         });
     });
