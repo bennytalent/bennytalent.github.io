@@ -68,6 +68,7 @@ function startScanner() {
                 facingMode: "environment"
             },
         },
+        frequency: 1,
         decoder: {
             readers: [
                 //"code_128_reader",
@@ -96,6 +97,7 @@ function startScanner() {
                     showBB: true
                 }
             }
+
         },
 
     }, function (err) {
@@ -131,6 +133,43 @@ function startScanner() {
 
             if (result.codeResult && result.codeResult.code) {
                 Quagga.ImageDebug.drawPath(result.line, { x: 'x', y: 'y' }, drawingCtx, { color: 'red', lineWidth: 3 });
+
+                setTimeout(function () {
+                    console.log("Barcode detected and processed : [" + result.codeResult.code + "]", result);
+
+                    /* if(!_lockScanning){*/
+                    Quagga.pause();
+
+                    function alertMessage() {
+
+                        if(!_lockScanning){
+
+                            _lockScanning = true;
+
+                            if (confirm("Code detected: " + result.codeResult.code + "\nCorrect?")) {
+                                //Quagga.stop();
+                                drawingCtx.clearRect(0, 0, drawingCanvas.width, drawingCanvas.height);
+                                setTimeout(function () {
+                                    Quagga.start();
+                                    _lockScanning = false;
+                                }, 3000);
+                            } else {
+                                //startScanner();
+                                setTimeout(function () {
+                                    Quagga.start();
+                                    _lockScanning = false;
+                                }, 3000);
+
+                            }
+                            //alert("Code detected: " + result.codeResult.code + "\n Correct?");
+                        }
+                    };
+
+                    alertMessage();
+
+                    //}
+                }, 500);
+
             }
 
         }
@@ -138,26 +177,7 @@ function startScanner() {
 
 
     Quagga.onDetected(function (result) {
-        console.log("Barcode detected and processed : [" + result.codeResult.code + "]", result);
 
-        if(!_lockScanning){
-
-            _lockScanning = true;
-
-            function alertMessage() {
-                if (confirm("Code detected: " + result.codeResult.code + "\nCorrect?")) {
-                    Quagga.stop();
-                    _lockScanning = false;
-                } else {
-                    startScanner();
-                    _lockScanning = false;
-                }
-                //alert("Code detected: " + result.codeResult.code + "\n Correct?");
-            };
-
-            alertMessage();
-
-        }
 
     });
 }
@@ -185,7 +205,7 @@ switchScanner.addEventListener("click", function () {
 }, false);
 
 //torch
-turnOnTorch();
+//turnOnTorch();
 
 // dropdown menu
 document.getElementById("menu").addEventListener("click", function () {
