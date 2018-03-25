@@ -171,6 +171,7 @@ function startScanner() {
 
         console.log("Initialization finished. Ready to start");
         Quagga.start();
+        document.getElementById("switch-scanner").checked = true;
 
         // Set flag to is running
         //_scannerIsRunning = true;
@@ -275,7 +276,7 @@ switchScanner.addEventListener("click", function () {
 }, false);
 
 //torch
-//startScanner();
+startScanner();
 loadTorch();
 
 // dropdown menu
