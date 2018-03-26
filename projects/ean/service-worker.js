@@ -6,7 +6,8 @@ var CACHE_APP = [
     '/index.html',
     '/js/main.js',
     '/js/quagga.js',
-    '/css/style.css'
+    '/css/style.css',
+    '/images/menu_icon.png'
 ];
 
 var CACHE_STATIC  = [
